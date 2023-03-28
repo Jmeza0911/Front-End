@@ -1,0 +1,64 @@
+
+<h1 class="mt-5">Selectores anidados</h1>
+<hr>
+
+<!-- Continente -->
+<form [formGroup]="miFormulario" (ngSubmit)="guardar()" >
+    <div class="row mb-3">
+        <div class="col">
+            <label class="form-label"> Continente:</label>
+            <select class="form-control" 
+                    formControlName="region">
+                <option value="">-- Seleccione Continente</option>
+                <option *ngFor="let region of regiones"
+                        [value]="region | lowercase">{{region}}  </option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Paises -->
+
+    <div class="row mb-3" *ngIf="paises.length !==0">
+        <div class="col">
+            <label class="form-label"> Países :</label>
+            <select class="form-control" 
+                    formControlName="pais">
+                <option value="">-- Seleccionar País</option>
+                <option *ngFor="let pais of paises"
+                        [value]="pais.cca2| lowercase">{{pais.name.common}}  </option>
+            </select>
+        </div>
+    </div>
+
+    <!-- Fronteras -->
+
+    <div class="row mb-3" *ngIf="fronteras.length >0">
+        <div class="col">
+            <label class="form-label"> Fronteras :</label>
+            <select class="form-control" 
+                    formControlName="frontera"
+                    [disabled]="fronteras.length ===0">
+                <option value="">-- Seleccionar País fronterizos</option>
+                <option *ngFor="let frontera of fronteras"
+                        [value]="frontera">{{frontera}}  </option>
+            </select>
+        </div> 
+    </div>
+    
+    <div class="row" *ngIf="cargando">
+        <div class="col">
+            <div class="alert alert-primary">
+                Cargando Caremonda cogela suave
+            </div>
+        </div>
+    </div>
+    
+    <div class="row mt-2" >
+        <div class="col">
+            <button class="btn btn-primary float-end"
+                    type="submit">
+                Seleccionar
+            </button>
+        </div>
+    </div>
+</form>

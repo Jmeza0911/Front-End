@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>App Delivery</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="/build/css/app.css">
+</head>
+<body>
+    <header class="header contenedor">
+        <div class="header__logo">
+            <img src="src/img/logo.svg" alt="logo delivery app">
+        </div>
+
+        <nav class="navegacion">
+            <a href="#" class="navegacion__link">Iniciar Sesión</a>
+            <a href="#" class="navegacion__link">Crear Cuenta</a>
+            <a href="#" class="navegacion__link navegacion__link--registrar">Registrar Restaurante</a>
+        </nav>
+    </header>
+
+    <section class="contenedor formulario">
+        <div class="formulario__grid">
+            <div class="formulario__contenido">
+                <h2 class="formulario__heading">Encuentra y Pide comida de tu restaurante favorito</h2>
+                <form class="formulario__buscar">
+                    <div class="formulario__campo">
+                        <label for="restaurant" class="formulario__label">Restaurante</label>
+                        <input id="restaurant" class="formulario__input" type="text" placeholder="Papa Jhon's">
+                    </div>
+                    <div class="formulario__campo">
+                        <label  for="platillo" class="formulario__label">Platillo</label>
+                        <input id="platillo" class="formulario__input" type="text" placeholder="Pizza, Tacos, Papa loca">
+                    </div>
+                    <input type="submit" class="formulario__submit" value="Buscar">
+                </form>
+            </div>
+
+            <div class="formulario__imagen-contenedor">
+                <img class="formulario_imagen" src="src/img/dibujo_repartidor.svg" alt="imagen repartidor">
+            </div>
+        </div>
+
+    </section>
+
+    <section class="pasos">
+        <img class="pasos__wave" src ="src/img/wave.svg">
+
+        <div class="pasos__contenido">
+            <h2 class="pasos__heading">¿Como funciona? <span class="pasos__heading--descripcion">tan fácil como 1 2 3</span></h2>
+            <div class="pasos__grid contenedor">
+                <div class="pasos__paso">
+                    <img class="pasos__imagen" src="src/img/paso_1.png" alt="imagen paso">
+                </div> 
+                <div>
+                    <img class="pasos__imagen" src="src/img/paso_2.png" alt="imagen paso">
+                </div>   
+                <div>
+                    <img class="pasos__imagen" src="src/img/paso_3.png" alt="imagen paso">
+                </div>        
+            </div>    
+        </div>
+    </section>
+    
+    <section>
+        <section class="contenedor testimoniales">
+            <h2 class="testimoniales__heading">Testimoniales</h2>
+
+            <div class="testimoniales__grid">
+                <div class="testimonial">
+                    <header class="testimonial__header">
+                        <div class="testimonial__imagen">
+                            <img src="src/img/testimoniales1.jpg" alt="">
+                        
+                        </div>
+
+                        <div class="testimonial__informacion">
+                            <p class="testimonial__autor">Diomedez Diaz</p>
+                            <img src="src/img/estrellas.png" alt="">
+                        </div>
+                    </header>
+
+                    <blockquote class="testimonial__texto">
+                        "Por un desprecio yo me suicido con un revolver de bollo e yuca"
+                    </blockquote>
+                </div><!--.testimoniales-->
+            
+                <div class="testimonial">
+                    <header class="testimonial__header">
+                        <div class="testimonial__imagen">
+                            <img src="src/img/testimoniales3.jpeg" alt="">
+                        
+                        </div>
+
+                        <div class="testimonial__informacion">
+                            <p class="testimonial__autor">Carlos Valderrama (el pibe)</p>
+                            <img src="src/img/estrellas.png" alt="">
+                        </div>
+                    </header>
+
+                    <blockquote class="testimonial__texto">
+                        "Es que tu me preguntas unas vainas"
+                    </blockquote>
+                </div>
+
+                <div class="testimonial">
+                    <header class="testimonial__header">
+                        <div class="testimonial__imagen">
+                            <img src="src/img/testimoniales3.jpg" alt="">
+                        
+                        </div>
+
+                        <div class="testimonial__informacion">
+                            <p class="testimonial__autor">Mr Black (El presidente del genero)</p>
+                            <img src="src/img/estrellas.png" alt="">
+                        </div>
+                    </header>
+
+                    <blockquote class="testimonial__texto">
+                        "Los que no querian, aquí me tienen"
+                    </blockquote>
+                </div>
+
+                <div class="testimonial">
+                    <header class="testimonial__header">
+                        <div class="testimonial__imagen">
+                            <img src="src/img/testimoniales4.jpeg" alt="">
+                        
+                        </div>
+
+                        <div class="testimonial__informacion">
+                            <p class="testimonial__autor">Yina Calderon</p>
+                            <img src="src/img/estrellas.png" alt="">
+                        </div>
+                    </header>
+
+                    <blockquote class="testimonial__texto">
+                        "Los sotanos del infierno"
+                    </blockquote>
+                </div>
+
+                <div class="testimonial">
+                    <header class="testimonial__header">
+                        <div class="testimonial__imagen">
+                            <img src="src/img/testimoniales5.jpg" alt="">
+                        
+                        </div>
+
+                        <div class="testimonial__informacion">
+                            <p class="testimonial__autor">El chico gel</p>
+                            <img src="src/img/estrellas.png" alt="">
+                        </div>
+                    </header>
+
+                    <blockquote class="testimonial__texto">
+                        "Las cartageneras son fuleras, te lo dijo el chico gel, ya , sin palabras"
+                    </blockquote>
+                </div>
+
+                <div class="testimonial">
+                    <header class="testimonial__header">
+                        <div class="testimonial__imagen">
+                            <img src="src/img/testimoniales6.jpeg" alt="">
+                        
+                        </div>
+
+                        <div class="testimonial__informacion">
+                            <p class="testimonial__autor">Teofilo Gutierrez (el perfume)</p>
+                            <img src="src/img/estrellas.png" alt="">
+                        </div>
+                    </header>
+
+                    <blockquote class="testimonial__texto">
+                       "Puro perfume Europeo papi"
+                    </blockquote>
+                </div>
+
+            </div>  
+        </section>
+    </section>
+
+    <section class="repartidores">
+        <h2 class="repartidores__heading" > Gana dinero con AppComida</h2>
+
+        <div class="repartidores__grid contenedor">
+
+        
+        <div class="repartidores_imagen">
+            <img src="src/img/repartidor.jpg" >
+        </div>
+
+            <div class="repartidores__contenido">
+                <p class="repartidores__texto"> Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa minus laboriosam quasi. Vero nihil tempora atque sunt totam saepe! Quibusdam voluptatibus fuga aliquid tenetur provident nesciunt qui sit. Ab, exercitationem!</p>
+                <a href="#" class="repartidores__enlace">Más Información</a>
+            </div>
+        
+        </div>
+       
+    </section>
+
+    <section class="descargar">
+        <div class="descargar__grid contenedor">
+            <div class="descargar__imagen">
+                <img src="src/img/app.png" alt="">
+            </div>
+
+            <div class="plataformas">
+                <h3 class="plataformas__heading">Descarga la App</h3>
+                <p class="plataformas__texto">Disponible para Android y iOS</p>
+
+                <div class="plataformas__grid">
+                    <a href="" class="plataformas__enlace">
+                        <img src="src/img/tienda-apple.svg" alt="">
+                    </a>
+
+                    <a href="" class="plataformas__enlace">
+                        <img src="src/img/tienda-android.svg" alt="">
+                    </a>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+  <footer class="footer">
+    <div class="footer__grid contenedor">
+        <div class="footer__widget">
+            <h3 class="footer__heading"> Nosotros</h3>
+            <p class="footer__texto"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod consectetur quaerat aperiam possimus distinctio adipisci perferendis voluptate mollitia non voluptatem officiis dolore, quae et quibusdam similique molestiae nobis rerum alias!</p>
+
+        </div>
+        <div class="footer__widget">
+            <h3 class="footer__heading"> Navegacion </h3>
+            <nav class="footer__nav">
+                <a href="#" class="footer__link">Enlace1</a>
+                <a href="#" class ="footer__link">Enlace1</a>
+                <a href="#" class="footer__link">Enlace1</a>
+                <a href="#" class="footer__link">Enlace1</a>
+                <a href="#" class="footer__link">Enlace1</a>
+                <a href="#" class="footer__link">Enlace1</a>
+            </nav>
+        </div>
+
+        <div class="footer__widget">
+            <h3 class="footer__heading"> Contacto</h3>
+            <p class="footer__texto"> Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quod consectetur quaerat aperiam possimus distinctio adipisci perferendis voluptate mollitia non voluptatem officiis dolore, quae et quibusdam similique molestiae nobis rerum alias!</p>
+
+        </div>
+
+    </div>
+
+    <p class =" footer__copyright">
+        App comida. Todos los derechos Reservados
+    </p>
+  </footer>
+
+</body>
+</html>

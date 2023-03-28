@@ -1,0 +1,23 @@
+@use 'base/variables' as v;
+@use 'base/mixins' as m;
+
+.descargar{
+    background-color: v.$grisClaro ;
+    padding: v.$separacion 0;
+    &__grid{
+        @include m.tablet{
+            @include m.grid(2, v.$separacion)
+        }
+    }
+
+    &__imagen{
+        width: 50%;
+        margin: 0 auto 2rem;
+        transition-property: transform;
+        transition-duration: 300ms;
+
+        &:hover{
+            transform: rotate(2deg) scale(1);
+        }
+    }
+}
